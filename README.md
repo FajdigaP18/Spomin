@@ -14,4 +14,4 @@ Pri projektu smo uporabljali računalniški program Java.
 Žiga Valič in Polona Fajdiga
 
 ## Predstavitev projekta:
-Video: 
+Video: video1838742845.mp4 (zgoraj)
