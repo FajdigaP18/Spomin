@@ -27,7 +27,7 @@ public class matchingGame implements ActionListener{
 		//main window
 		this.mainFrame=new JFrame("Matching Game");
 		this.mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.mainFrame.setSize(400, 500);
+		this.mainFrame.setSize(800, 800);
 		this.mainContentPane=this.mainFrame.getContentPane();
 		this.mainContentPane.setLayout(new BoxLayout(this.mainContentPane, BoxLayout.PAGE_AXIS));
 		//Menu Bar
@@ -61,7 +61,7 @@ public class matchingGame implements ActionListener{
 			String fileName="Sadje/card"+i+".jpg";
 			ImageIcon imageIcon = new ImageIcon(fileName);
 			Image image = imageIcon.getImage();
-			Image newImage = image.getScaledInstance(215, 217, java.awt.Image.SCALE_SMOOTH);
+			Image newImage = image.getScaledInstance(180, 180, java.awt.Image.SCALE_SMOOTH);
 			icon[i] = new ImageIcon(newImage);
 			//icon[i]=new ImageIcon(fileName);
 			
