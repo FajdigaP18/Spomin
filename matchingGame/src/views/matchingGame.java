@@ -2,6 +2,7 @@ package views;
 
 import java.awt.Container;
 import java.awt.GridLayout;
+import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Random;
@@ -58,7 +59,11 @@ public class matchingGame implements ActionListener{
 		ImageIcon icon[]=new ImageIcon[9];
 		for (int i=0;i<9;i++) {
 			String fileName="Sadje/card"+i+".jpg";
-			icon[i]=new ImageIcon(fileName);
+			ImageIcon imageIcon = new ImageIcon(fileName);
+			Image image = imageIcon.getImage();
+			Image newImage = image.getScaledInstance(215, 217, java.awt.Image.SCALE_SMOOTH);
+			icon[i] = new ImageIcon(newImage);
+			//icon[i]=new ImageIcon(fileName);
 			
 		}
 		return icon;
